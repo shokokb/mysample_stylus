@@ -1,0 +1,10 @@
+body {
+  color: #f00;
+}
+body ul li {
+  color: #00f;
+}
+body ul li a {
+  background-color: #00f;
+  color: ;
+}

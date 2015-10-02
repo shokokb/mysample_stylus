@@ -1,0 +1,11 @@
+position()
+  position arguments
+  // mixin呼出元でz-indexが存在しなければz-index:1を使用する。
+  z-index 1 unless @z-index
+
+#logo
+  z-index 20
+  position absolute
+
+#logo2
+  position absolute

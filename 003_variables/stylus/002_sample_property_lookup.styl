@@ -1,0 +1,14 @@
+#logo
+  position absolute
+  top 50%
+  left 50%
+  // 変数を参照して、marginを決定
+  // width  w = 150px
+  // height h = 80px
+  //margin-left -(w / 2)  // -75px
+  //margin-top  -(h / 2)  // -40px
+  // 変数を用意せず@propertyでも記述可。
+  width 150px
+  height 80px
+  margin-left -(@width / 2)
+  margin-top -(@height / 2)
