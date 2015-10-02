@@ -1,0 +1,12 @@
+/**
+ * Disambiguation 曖昧性の除去
+ * margin - nの場合、減算とも解釈されうる。
+ * 曖昧性を排除するために小括弧で囲む。
+ */
+body {
+  margin: -5px;
+/*
+   * Stylusで処理できないプロパティ値はunquote関数を使用する。
+   */
+  filter: progid:DXImageTransform.Mycrosoft.BasicImage(rotation=1);
+}

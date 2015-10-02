@@ -1,0 +1,14 @@
+/*
+ * ルート参照（/）
+ * is-hoverdは
+ */
+textarea input {
+  color: #a7a7a7;
+}
+textarea input:hover,
+.is-hovered {
+  color: #000;
+}
+/*
+ * 現在のセレクタの取得 built-in function selector()
+ */

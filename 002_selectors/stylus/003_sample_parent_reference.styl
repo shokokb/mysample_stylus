@@ -1,0 +1,29 @@
+/**
+ * & : 親要素の参照
+ * 複数の親要素（textarea, input）がhoverの場合に、色を#000に設定する。
+ */
+textarea, input
+  color #A7A7A7
+  &:hover
+    color #000
+
+
+/**
+ * argumentsはmixinに与えられた引数を指す。
+ */
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+  html.ie8 &, html.ie7 &, html.ie6 & /* =>&は親要素の#loginを指す */
+    border 2px solid arguments[length(arguments) - 1] /* 末尾の引数 */
+
+body
+  #login
+    box-shadow 1px 1px 3px #eee //->argumentsに代入される
+
+/*
+ * アンバサンド（＆）はエスケープする
+ */
+.foo[title='\&']
+  color yellow

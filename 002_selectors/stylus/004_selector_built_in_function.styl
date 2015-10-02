@@ -1,0 +1,31 @@
+/*
+ * ルート参照（/）
+ * is-hoverdは
+ */
+textarea input
+  color: #A7A7A7
+  &:hover, /* 親要素を指す */
+  /.is-hovered /* ルートのクラスを指す */
+    color #000
+
+/*
+ * 現在のセレクタの取得 built-in function selector()
+ */
+.foo
+  selector()
+// -> .foo
+
+.foo
+  &:hover
+    selector()
+// -> .foo:hover
+
+// &がついていない場合は引数に指定されたセレクタを返却する。
+.foo
+  selector('.bar')
+// -> '.bar'
+
+// &がついている場合は現在のスコープセレクタを返却する。
+.foo
+  selector('&:hover')
+// -> .foo
